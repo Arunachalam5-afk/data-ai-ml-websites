@@ -1,484 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore Data Analysis and Artificial Intelligence / Machine Learning concepts, tools, and techniques in this comprehensive intern project website." />
-  <title>Data Analysis &amp; AI/ML — Intern Project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis & AI/ML — Intern Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header class="header" id="top">
-    <nav class="navbar" id="navbar">
-      <div class="nav-brand">
-        <span class="brand-icon">⚡</span>
-        <span class="brand-text">AI<span class="accent">&amp;</span>ML</span>
-      </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
-        <li><a href="#about-aiml" class="nav-link" id="nav-about">About AI/ML</a></li>
-        <li><a href="#data-analysis" class="nav-link" id="nav-data">Data Analysis</a></li>
-        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+    <nav>
+        <div class="logo">AI/ML Website</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aiml">About AI/ML</a></li>
+            <li><a href="#data">Data Analysis</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-animation">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Intern Project 2025
-      </div>
-      <h1 class="hero-title">
-        Exploring <span class="gradient-text">Data Analysis</span>
-        &amp; <span class="gradient-text">AI / ML</span>
-      </h1>
-      <p class="hero-subtitle">
-        Artificial Intelligence and Machine Learning are transforming every industry —
-        from healthcare to finance. This project dives deep into the tools, techniques,
-        and real-world applications powering the data-driven future.
-      </p>
-      <div class="hero-cta">
-        <a href="#about-aiml" class="btn btn-primary" id="cta-explore">Explore Now</a>
-        <a href="#data-analysis" class="btn btn-outline" id="cta-data">View Data Analysis</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-number">500B+</span>
-          <span class="stat-label">Parameters in modern LLMs</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">2.5Q</span>
-          <span class="stat-label">Bytes of data created daily</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">97%</span>
-          <span class="stat-label">Accuracy in image recognition</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-image-wrapper">
-      <div class="hero-img-glow"></div>
-      <img src="images/ai-robot.jpg" alt="AI Robot representing Artificial Intelligence" class="hero-img" id="hero-robot-img" />
-    </div>
-  </section>
-
-  <!-- ===== ABOUT AI/ML SECTION ===== -->
-  <section class="section" id="about-aiml">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Understanding the Basics</span>
-        <h2 class="section-title">What is <span class="gradient-text">Artificial Intelligence &amp; ML?</span></h2>
-        <p class="section-desc">
-          AI and Machine Learning are the twin engines of the modern technological revolution,
-          enabling machines to learn, reason, and make decisions autonomously.
+    <header class="hero">
+        <h1>Welcome to Data Analysis & AI/ML</h1>
+        <p>
+            Artificial Intelligence and Machine Learning help computers
+            learn from data and make intelligent decisions.
         </p>
-      </div>
+    </header>
 
-      <div class="cards-grid">
-        <div class="card" id="card-ai">
-          <div class="card-icon">🤖</div>
-          <h3 class="card-title">Artificial Intelligence</h3>
-          <p class="card-text">
-            AI is the simulation of human intelligence in machines — enabling them to think,
-            reason, solve problems, understand language, and learn from experience.
-          </p>
-          <ul class="card-list">
-            <li>Natural Language Processing (NLP)</li>
-            <li>Computer Vision</li>
-            <li>Robotics &amp; Automation</li>
-          </ul>
-        </div>
-
-        <div class="card featured" id="card-ml">
-          <div class="card-icon">🧠</div>
-          <h3 class="card-title">Machine Learning</h3>
-          <p class="card-text">
-            ML is a subset of AI where systems learn from data to improve performance on
-            specific tasks without being explicitly programmed for each scenario.
-          </p>
-          <ul class="card-list">
-            <li>Supervised Learning</li>
-            <li>Unsupervised Learning</li>
-            <li>Reinforcement Learning</li>
-          </ul>
-        </div>
-
-        <div class="card" id="card-dl">
-          <div class="card-icon">🔮</div>
-          <h3 class="card-title">Deep Learning</h3>
-          <p class="card-text">
-            Deep Learning uses multi-layered neural networks inspired by the human brain to
-            process vast amounts of unstructured data like images, audio, and text.
-          </p>
-          <ul class="card-list">
-            <li>Convolutional Neural Networks</li>
-            <li>Transformer Models</li>
-            <li>Generative Adversarial Networks</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="aiml-visual">
-        <div class="aiml-image-block">
-          <img src="images/data.jpg" alt="Abstract data network visualization showing AI interconnections" class="section-img" id="data-network-img" />
-          <div class="img-caption">Neural network data flow visualization</div>
-        </div>
-        <div class="aiml-info">
-          <h3>How AI/ML Is Changing the World</h3>
-          <div class="info-items">
-            <div class="info-item" id="info-healthcare">
-              <div class="info-icon">🏥</div>
-              <div>
-                <strong>Healthcare</strong>
-                <p>AI diagnoses diseases from medical imaging with superhuman accuracy and accelerates drug discovery.</p>
-              </div>
-            </div>
-            <div class="info-item" id="info-finance">
-              <div class="info-icon">💰</div>
-              <div>
-                <strong>Finance</strong>
-                <p>ML models detect fraud in real-time, optimize trading strategies, and personalize banking experiences.</p>
-              </div>
-            </div>
-            <div class="info-item" id="info-transport">
-              <div class="info-icon">🚗</div>
-              <div>
-                <strong>Transportation</strong>
-                <p>Self-driving vehicles use computer vision and deep learning to navigate complex road environments.</p>
-              </div>
-            </div>
-            <div class="info-item" id="info-climate">
-              <div class="info-icon">🌍</div>
-              <div>
-                <strong>Climate Science</strong>
-                <p>AI models climate patterns, optimizes renewable energy grids, and predicts natural disasters.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== DATA ANALYSIS SECTION ===== -->
-  <section class="section section-dark" id="data-analysis">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">From Raw Data to Insight</span>
-        <h2 class="section-title">The Power of <span class="gradient-text">Data Analysis</span></h2>
-        <p class="section-desc">
-          Data Analysis is the process of inspecting, cleaning, transforming, and modelling data
-          to discover useful information, draw conclusions, and support decision-making.
+    <section id="data" class="card">
+        <h2>Data Analysis</h2>
+        <img src="images/chart.jpg" alt="Chart">
+        <p>
+            Data Analysis is the process of collecting, cleaning,
+            transforming and interpreting data to discover useful insights.
         </p>
-      </div>
+    </section>
 
-      <div class="data-showcase">
-        <div class="chart-block">
-          <img src="images/chart.jpg" alt="Data analytics dashboard with charts and graphs" class="section-img rounded-lg" id="analytics-chart-img" />
-          <div class="img-caption">Interactive data analytics dashboard</div>
-        </div>
-
-        <div class="pipeline">
-          <h3>The Data Analysis Pipeline</h3>
-          <div class="pipeline-steps">
-            <div class="step" id="step-collect">
-              <div class="step-num">01</div>
-              <div class="step-content">
-                <strong>Data Collection</strong>
-                <p>Gather raw data from APIs, databases, surveys, sensors, and web scraping.</p>
-              </div>
-            </div>
-            <div class="step" id="step-clean">
-              <div class="step-num">02</div>
-              <div class="step-content">
-                <strong>Data Cleaning</strong>
-                <p>Remove duplicates, handle missing values, and normalize inconsistent formats.</p>
-              </div>
-            </div>
-            <div class="step" id="step-explore">
-              <div class="step-num">03</div>
-              <div class="step-content">
-                <strong>Exploratory Analysis</strong>
-                <p>Use statistical methods and visualizations to uncover patterns and outliers.</p>
-              </div>
-            </div>
-            <div class="step" id="step-model">
-              <div class="step-num">04</div>
-              <div class="step-content">
-                <strong>Modelling &amp; Prediction</strong>
-                <p>Apply ML algorithms to build predictive models and extract actionable insights.</p>
-              </div>
-            </div>
-            <div class="step" id="step-viz">
-              <div class="step-num">05</div>
-              <div class="step-content">
-                <strong>Visualization &amp; Reporting</strong>
-                <p>Communicate findings through dashboards, charts, and executive reports.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="tools-heading">Popular Tools &amp; Technologies</h3>
-      <div class="tools-grid">
-        <div class="tool-badge" id="tool-python">🐍 Python</div>
-        <div class="tool-badge" id="tool-r">📊 R</div>
-        <div class="tool-badge" id="tool-pandas">🐼 Pandas</div>
-        <div class="tool-badge" id="tool-numpy">🔢 NumPy</div>
-        <div class="tool-badge" id="tool-sklearn">⚙️ Scikit-learn</div>
-        <div class="tool-badge" id="tool-tensorflow">🤖 TensorFlow</div>
-        <div class="tool-badge" id="tool-pytorch">🔥 PyTorch</div>
-        <div class="tool-badge" id="tool-tableau">📈 Tableau</div>
-        <div class="tool-badge" id="tool-spark">⚡ Apache Spark</div>
-        <div class="tool-badge" id="tool-sql">🗄️ SQL</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ML MODELS SECTION ===== -->
-  <section class="section" id="ml-models">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Algorithms &amp; Models</span>
-        <h2 class="section-title">Key <span class="gradient-text">Machine Learning</span> Algorithms</h2>
-      </div>
-      <div class="algo-grid">
-        <div class="algo-card" id="algo-regression">
-          <div class="algo-icon">📉</div>
-          <h4>Linear Regression</h4>
-          <p>Predicts a continuous output based on one or more input features.</p>
-          <span class="algo-type">Supervised</span>
-        </div>
-        <div class="algo-card" id="algo-classification">
-          <div class="algo-icon">🏷️</div>
-          <h4>Classification</h4>
-          <p>Categorizes input data into predefined classes or labels.</p>
-          <span class="algo-type">Supervised</span>
-        </div>
-        <div class="algo-card" id="algo-clustering">
-          <div class="algo-icon">🔵</div>
-          <h4>K-Means Clustering</h4>
-          <p>Groups data into k clusters based on feature similarity.</p>
-          <span class="algo-type">Unsupervised</span>
-        </div>
-        <div class="algo-card" id="algo-forest">
-          <div class="algo-icon">🌲</div>
-          <h4>Random Forest</h4>
-          <p>Ensemble method using multiple decision trees for robust predictions.</p>
-          <span class="algo-type">Supervised</span>
-        </div>
-        <div class="algo-card" id="algo-neural">
-          <div class="algo-icon">🧬</div>
-          <h4>Neural Networks</h4>
-          <p>Layers of interconnected nodes that learn complex non-linear patterns.</p>
-          <span class="algo-type">Deep Learning</span>
-        </div>
-        <div class="algo-card" id="algo-rl">
-          <div class="algo-icon">🎮</div>
-          <h4>Reinforcement Learning</h4>
-          <p>Agents learn optimal behavior by maximizing cumulative reward signals.</p>
-          <span class="algo-type">RL</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="section section-contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
-        <p class="section-desc">
-          Interested in AI/ML, data science, or want to collaborate on a project?
-          Reach out — I'd love to hear from you.
+    <section id="aiml" class="card">
+        <h2>Artificial Intelligence & Machine Learning</h2>
+        <img src="images/ai-robot.jpg" alt="AI Robot">
+        <p>
+            AI enables machines to mimic human intelligence while
+            Machine Learning allows systems to improve automatically
+            through experience.
         </p>
-      </div>
-      <div class="contact-wrapper">
-        <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" required />
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Collaboration on AI Project" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea or question..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary full-width" id="submit-btn">Send Message 🚀</button>
-          <div class="form-success" id="form-success" style="display:none;">
-            ✅ Message sent! I'll get back to you soon.
-          </div>
-        </form>
-        <div class="contact-info">
-          <div class="contact-card" id="contact-github">
-            <div class="contact-icon">🐙</div>
-            <h4>GitHub</h4>
-            <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">github.com/YOUR_USERNAME</a>
-          </div>
-          <div class="contact-card" id="contact-email-card">
-            <div class="contact-icon">📧</div>
-            <h4>Email</h4>
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-          </div>
-          <div class="contact-card" id="contact-linkedin">
-            <div class="contact-icon">💼</div>
-            <h4>LinkedIn</h4>
-            <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer">linkedin.com/in/YOUR_USERNAME</a>
-          </div>
-          <div class="quote-block">
-            <blockquote>
-              "Data is the new oil, but AI is the refinery that turns it into value."
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <span class="brand-icon">⚡</span>
-        <span class="brand-text">AI<span class="accent">&amp;</span>ML</span>
-        <p class="footer-tagline">Empowering the future through data and intelligence.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home" id="footer-home">Home</a></li>
-          <li><a href="#about-aiml" id="footer-about">About AI/ML</a></li>
-          <li><a href="#data-analysis" id="footer-data">Data Analysis</a></li>
-          <li><a href="#contact" id="footer-contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-resources">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="https://scikit-learn.org" target="_blank" rel="noopener noreferrer" id="link-sklearn">Scikit-Learn</a></li>
-          <li><a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer" id="link-tf">TensorFlow</a></li>
-          <li><a href="https://pytorch.org" target="_blank" rel="noopener noreferrer" id="link-pytorch">PyTorch</a></li>
-          <li><a href="https://kaggle.com" target="_blank" rel="noopener noreferrer" id="link-kaggle">Kaggle</a></li>
-        </ul>
-      </div>
-      <div class="footer-author">
-        <h4>About the Author</h4>
-        <p>Built by <strong>Your Name</strong> as part of an internship project exploring the world of AI, Machine Learning, and Data Science.</p>
-        <a href="https://github.com/YOUR_USERNAME" class="github-link" target="_blank" rel="noopener noreferrer" id="footer-github-link">
-          🐙 github.com/YOUR_USERNAME
-        </a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Data Analysis &amp; AI/ML Intern Project — Built with ❤️ by <strong>Your Name</strong></p>
-    </div>
-  </footer>
+    <section class="card">
+        <h2>Future of AI</h2>
+        <img src="images/data.png" alt="Data Science">
+        <p>
+            AI is transforming healthcare, finance, education,
+            transportation and many other industries.
+        </p>
+    </section>
 
-  <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+    <footer id="contact">
+        <p>Created by Your Name</p>
+        <p>
+            GitHub:
+            <a href="https://github.com/YOUR_USERNAME" target="_blank">
+                YOUR_USERNAME
+            </a>
+        </p>
+    </footer>
 
-  <script>
-    // ===== NAVBAR SCROLL EFFECT =====
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // ===== HAMBURGER MENU =====
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.classList.toggle('active');
-    });
-
-    // Close menu on link click
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('open');
-        hamburger.classList.remove('active');
-      });
-    });
-
-    // ===== ACTIVE NAV LINK ON SCROLL =====
-    const sections = document.querySelectorAll('section[id]');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(section => {
-        if (window.scrollY >= section.offsetTop - 120) {
-          current = section.getAttribute('id');
-        }
-      });
-      document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === '#' + current) {
-          link.classList.add('active');
-        }
-      });
-    });
-
-    // ===== BACK TO TOP BUTTON =====
-    const backToTop = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      backToTop.classList.toggle('visible', window.scrollY > 400);
-    });
-
-    // ===== CONTACT FORM =====
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      const btn = document.getElementById('submit-btn');
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      setTimeout(() => {
-        document.getElementById('form-success').style.display = 'block';
-        btn.textContent = 'Send Message 🚀';
-        btn.disabled = false;
-        e.target.reset();
-      }, 1200);
-    }
-
-    // ===== SCROLL REVEAL ANIMATION =====
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.card, .algo-card, .step, .info-item, .tool-badge, .contact-card').forEach(el => {
-      el.classList.add('reveal');
-      observer.observe(el);
-    });
-  </script>
 </body>
 </html>
